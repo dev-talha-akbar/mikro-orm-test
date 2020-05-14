@@ -1,0 +1,28 @@
+{
+  "name": "mikro-collection-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "mikro-orm": "^3.6.13",
+    "mongodb": "^3.5.7",
+    "ts-node": "^8.10.1"
+  },
+  "devDependencies": {
+    "@types/mongodb": "^3.5.16",
+    "@types/node": "^14.0.1",
+    "typescript": "^3.9.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "mikro-orm": {
+    "useTsNode": true,
+    "configPaths": [
+      "./src/mikro-orm.config.ts",
+      "./dist/mikro-orm.config.js"
+    ]
+  }
+}
